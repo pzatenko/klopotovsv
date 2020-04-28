@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font: normal 1.3rem/1.6 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #4c4c4c;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.25);
+  background: #fff;
+  overflow: hidden;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}

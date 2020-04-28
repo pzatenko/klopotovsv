@@ -1,0 +1,59 @@
+$font-size-html: 62.5%;
+
+// html font-size multipliers
+
+$multiplier-ultrahd: 2.4;
+$multiplier-quadhd: 1.6;
+$multiplier-fullhd: 1;
+$multiplier-default: 0.9;
+$multiplier-prehd: 0.85;
+$multiplier-oldres: 0.750;
+
+@mixin html-fz($m) {
+  font-size: ($font-size-html * $m) !important;
+}
+
+@media (min-width: 3501px) {
+  html {
+    @include html-fz($multiplier-ultrahd);
+  }
+}
+
+@media (max-width: 3500px) {
+  html {
+    @include html-fz($multiplier-quadhd);
+  }
+}
+
+@media (max-width: 2400px) {
+  html {
+    @include html-fz($multiplier-fullhd);
+  }
+}
+
+@media (max-width: 1550px) {
+  html {
+    @include html-fz($multiplier-default);
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    @include html-fz($multiplier-prehd);
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    @include html-fz($multiplier-oldres);
+  }
+}
+
+@import "_normalize";
+@import "base";
+@import "text";
+@import "header";
+@import "menu";
+@import "blocks";
+@import "tiles";
+

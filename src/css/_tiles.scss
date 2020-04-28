@@ -1,0 +1,98 @@
+.tiles {
+    margin-top: 5rem;
+    display: flex;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__right {
+        flex: auto;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding-left: 4rem;
+        flex-wrap: wrap;
+
+    }
+
+    &__rectangle {
+        display: flex;
+        width: 52.7rem;
+        height: 13rem;
+        background: linear-gradient(-145deg, #7cd1f5 0%, #1c80df 100%);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        align-items: center;
+        
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        &__svg {
+            height: 7.5rem;
+            margin: auto;
+            color: #e4f5ff;
+
+            &__pathop {
+                opacity: 0.4;
+            }
+        }
+        
+
+        &__thing {
+            width: 39.9rem;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            background: #fff;
+            border-radius: 0.5rem;
+            transition: all 400ms;
+            height: inherit;
+            padding: 2rem;
+
+            &:hover {
+                width: 41rem;
+                box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+            }
+
+            &__title {
+                font: 400 2.5rem/1.2 'Montserrat', sans-serif;
+                color: #151c2a;
+                margin: 0;
+
+            }
+
+            &__text {
+                font: 500 1.6rem/1.2 'Montserrat', sans-serif;
+                color: #7e8eaa;
+                margin: 0.2rem 0 0 0;
+            }
+        }
+
+    }
+
+    &__square {
+        width: 21rem;
+        height: 21rem;
+        border-radius: 1.5rem;
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        transition: all 200ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__img {
+            height: 10.5rem;
+            display: flex;
+            border-radius: 50%;
+            background: #a5dbf9;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
