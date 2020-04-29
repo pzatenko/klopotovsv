@@ -4,7 +4,7 @@
     &__content {
         display: flex;
         width: 148rem;
-        margin: 2rem auto;
+        margin: 4rem auto;
         flex-direction: column;
     }
 
@@ -25,4 +25,8 @@
           color: #fff;
         }
       }
+}
+.block-services {
+  height: 40rem;
+  background: url("../imgs/bg_block.png");
 }

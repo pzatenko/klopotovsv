@@ -74,25 +74,45 @@
     }
 
     &__square {
+        $parent: &;
+
         width: 21rem;
         height: 21rem;
         border-radius: 1.5rem;
         background: rgba(255, 255, 255, 0.28);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-        transition: all 200ms;
+        transition: all 400ms;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
+        &__title {
+            font: 700 1.6rem/1.2 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            color: rgb(237, 249, 255);
+            margin-top: 1.5rem;
+
+            #{$parent}:hover & {
+                color: rgb(48, 135, 200);
+            }
+        }
 
         &__img {
             height: 10.5rem;
             display: flex;
             border-radius: 50%;
-            background: #a5dbf9;
+            background: rgb(165, 219, 249);
+
+            #{$parent}:hover & {
+                background: rgb(82, 155, 209);
+            }
+
         }
 
         &:hover {
             transform: scale(1.03);
+            background: rgba(255, 255, 255, 1);
         }
     }
 }
