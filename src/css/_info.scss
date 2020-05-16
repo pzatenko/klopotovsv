@@ -7,7 +7,7 @@
   box-shadow: 0 0.2rem 1.9rem rgba(0, 0, 0, 0.25);
 
   &__title {
-    font: 700 2.3rem/1.2 'Montserrat', sans-serif;
+    font: 700 2.3rem/1.2 $fontfamily, sans-serif;
     color: #4c4c4c;
     margin: 0 0 1.5rem;
   }
@@ -24,8 +24,66 @@
     }
 
     &__right {
-      padding-left: 2rem;
+      padding: 1rem 2rem;
       width: 50%;
+    }
+
+    &__text-name {
+      font: 600 1.8rem/1.2 $fontfamily, sans-serif;
+      margin: 0 0 1rem;
+    }
+
+    &__text-address {
+      font: 400 1.6rem/1.4 $fontfamily, sans-serif;
+      margin: 0;
+    }
+
+    &__text-time {
+      font: italic 400 1.6rem/1.4 $fontfamily, sans-serif;
+      margin: 0;
+
+
+      &__weekday {
+        font-weight: 500;
+        font-style: normal;
+        color: #006400;
+      }
+
+      &__saturday {
+        font-weight: 500;
+        font-style: normal;
+        color: #d2691e;
+      }
+
+      &__sunday {
+        font-weight: 500;
+        font-style: normal;
+        color: #dc143c;
+      }
+    }
+
+    &__text-links {
+      display: flex;
+    }
+
+    &__link {
+      font: 400 1.6rem/1.4 $fontfamily, sans-serif;
+      text-decoration: none;
+      transition: all 200ms;
+      color: #0d5292;
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+
+      &:hover {
+        color: #258fe0;
+      }
+
+      &__svg {
+        height: 1.6rem;
+        width: 1.6rem;
+        margin-right: 1rem;
+      }
     }
 
     &__textarea {

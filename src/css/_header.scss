@@ -48,14 +48,14 @@ $header-color: #379ad9;
     }
 
     &__text {
-      font: 700 2.7rem/1.2 'Montserrat', sans-serif;
+      font: 700 2.7rem/1.2 $fontfamily, sans-serif;
       color: #fff;
       margin: 0;
       white-space: nowrap;
     }
 
     &__subtext {
-      font: 700 1.9rem/1.1 'Montserrat', sans-serif;
+      font: 700 1.9rem/1.1 $fontfamily, sans-serif;
       color: #fff;
       margin: 0;
       white-space: nowrap;
@@ -154,14 +154,14 @@ $header-color: #379ad9;
     }
 
     &__text {
-      font: 700 2.5rem/1.1 'Montserrat', sans-serif;
+      font: 700 2.5rem/1.1 $fontfamily, sans-serif;
       color: $header-color;
       margin: 0;
       white-space: nowrap;
     }
 
     &__subtext {
-      font: 700 1.7rem/1.1 'Montserrat', sans-serif;
+      font: 700 1.7rem/1.1 $fontfamily, sans-serif;
       color: $header-color;
       margin: 0;
       white-space: nowrap;

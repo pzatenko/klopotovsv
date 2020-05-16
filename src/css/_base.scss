@@ -5,7 +5,7 @@
 }
 
 body {
-  font: normal 1.3rem/1.6 'Montserrat', sans-serif;
+  font: normal 1.3rem/1.6 $fontfamily, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

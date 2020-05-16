@@ -59,14 +59,14 @@
             }
 
             &__title {
-                font: 400 2.5rem/1.2 'Montserrat', sans-serif;
+                font: 400 2.5rem/1.2 $fontfamily, sans-serif;
                 color: #151c2a;
                 margin: 0;
 
             }
 
             &__text {
-                font: 500 1.6rem/1.2 'Montserrat', sans-serif;
+                font: 500 1.6rem/1.2 $fontfamily, sans-serif;
                 color: #7e8eaa;
                 margin: 0.2rem 0 0 0;
             }
@@ -89,7 +89,7 @@
         flex-direction: column;
 
         &__title {
-            font: 700 1.6rem/1.2 'Montserrat', sans-serif;
+            font: 700 1.6rem/1.2 $fontfamily, sans-serif;
             text-transform: uppercase;
             color: rgb(237, 249, 255);
             margin-top: 1.5rem;

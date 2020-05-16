@@ -11,7 +11,7 @@
     transition: all 200ms;
 
     &__link {
-      font: 600 2rem/1.2 'Montserrat', sans-serif;
+      font: 600 2rem/1.2 $fontfamily, sans-serif;
       text-decoration: none;
       display: flex;
       text-align: center;
@@ -43,7 +43,7 @@
     transition: all 200ms;
 
     &__link {
-      font: 600 1.8rem/1.2 'Montserrat', sans-serif;
+      font: 600 1.8rem/1.2 $fontfamily, sans-serif;
       text-decoration: none;
       display: flex;
       text-align: center;
