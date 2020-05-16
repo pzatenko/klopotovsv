@@ -100,7 +100,7 @@
         }
 
         &__img {
-            height: 10.5rem;
+            height: 50%;
             display: flex;
             border-radius: 50%;
             background: rgb(165, 219, 249);
@@ -114,6 +114,58 @@
         &:hover {
             transform: scale(1.03);
             background: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .tiles {
+        flex-direction: column;
+        padding: 0 1rem 0;
+        margin-top: 0;
+
+        &__left {
+            margin-bottom: 3rem;
+        }
+
+        &__right {
+            padding: 0;
+            display: none; /* ??? */
+        }
+
+        &__rectangle {
+            width: 100%;
+            height: auto;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &__thing {
+                width: 75%;
+
+                &__title {
+                    font-size: 2rem;
+                }
+
+                &__text {
+                    font-size: 1.3rem;
+                }
+            }
+
+            &__svg {
+                margin: 0 2rem;
+            }
+        }
+
+        &__square {
+            width: 15rem;
+            height: 15rem;
+            margin-bottom: 2rem;
+
+            &__title {
+                font-size: 1.1rem;
+            }
         }
     }
 }

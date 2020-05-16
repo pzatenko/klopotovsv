@@ -2,12 +2,13 @@ $font-size-html: 62.5%;
 $fontfamily:  'Montserrat';
 
 // html font-size multipliers
-$multiplier-ultrahd: 2.4;
-$multiplier-quadhd: 1.6;
+$multiplier-ultrahd: 2.2;
+$multiplier-quadhd: 1.5;
 $multiplier-fullhd: 1;
-$multiplier-default: 0.9;
-$multiplier-prehd: 0.85;
-$multiplier-oldres: 0.750;
+$multiplier-default: 0.86;
+$multiplier-prehd: 0.81;
+$multiplier-oldres: 0.65;
+$multiplier-phone: 0.9;
 
 @mixin html-fz($m) {
   font-size: ($font-size-html * $m) !important;
@@ -46,6 +47,88 @@ $multiplier-oldres: 0.750;
 @media (max-width: 1100px) {
   html {
     @include html-fz($multiplier-oldres);
+  }
+}
+
+/* Styles for Mobile */
+
+@media (max-width: 850px) {
+  html {
+    @include html-fz(($multiplier-phone * 2.019263701));
+  }
+
+  body {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.915367597));
+  }
+}
+@media (max-width: 740px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.874827056));
+  }
+}
+@media (max-width: 720px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.847049278));
+  }
+}
+@media (max-width: 670px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.772422412));
+  }
+}
+@media (max-width: 640px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.725547412));
+  }
+}
+@media (max-width: 620px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.693289347));
+  }
+}
+@media (max-width: 570px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.605570049));
+  }
+}
+@media (max-width: 540px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.550014493));
+  }
+}
+@media (max-width: 480px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.39937769));
+  }
+}
+@media (max-width: 440px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.308468599));
+  }
+}
+@media (max-width: 414px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.245666667));
+  }
+}
+@media (max-width: 375px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.141666667));
+  }
+}
+@media (max-width: 360px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.1));
+  }
+}
+@media (max-width: 320px) {
+  html {
+    @include html-fz($multiplier-phone);
   }
 }
 

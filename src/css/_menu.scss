@@ -61,3 +61,38 @@
     }
   }
 }
+@media (max-width: 850px) {
+  .menu {
+    height: auto;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 1rem;
+
+    &__item {
+      width: 50%;
+      flex: 2;
+      margin: 0 1rem 1rem 0;
+      position: relative;
+
+      &__link {
+        font-size: 1.6rem;
+        background: rgba(255, 255, 255, 0.28);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        transition: all 400ms;
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          transform: unset;
+        }
+
+        &:focus {
+          background: rgba(255, 255, 255, 1);
+          color: rgb(55, 154, 217);
+        }
+      }
+    }
+  }
+}

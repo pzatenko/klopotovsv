@@ -1,6 +1,6 @@
 /*import shuffle from "lodash/shuffle";
 import axios from "axios";*/
-import $ from "jquery";
+import $ from "jquery/dist/jquery.slim";
 
 window.addEventListener("load", () => {
     const menuLiClass = ".menu__item, .menu-scroll__item";
@@ -21,7 +21,9 @@ window.addEventListener("load", () => {
         $(this).siblings().css("opacity", 1);
     });
 
-    if($(headerWrapper).length) {
+    const deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+    if($(headerWrapper).length && deviceWidth >= 850) {
         $(window).scroll(function() {
             if ($(this).scrollTop() > $(logoTitleShowPointClass).offset().top) {
                 $(headerWrapper).removeClass(headerWrapperHide);
