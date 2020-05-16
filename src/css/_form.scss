@@ -1,0 +1,89 @@
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  padding: 0 0.75rem;
+  height: 2.7rem;
+  font: normal 1.4rem/1 'Ubuntu', sans-serif;
+  border: 0.1rem solid rgb(206, 212, 218);
+  display: block;
+  width: 100%;
+  color: #495057;
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, background .15s ease-in-out;
+
+  &:focus {
+    color: #495057;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(128, 189, 255);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+
+  &:disabled {
+    background: rgb(233, 236, 239);
+  }
+
+  &:read-only {
+    background: rgb(233, 236, 239);
+  }
+}
+
+.btn {
+  border-radius: 0.4rem;
+  font: normal 1.3rem/1 'Ubuntu', sans-serif;
+  padding: 0.65rem 1.5rem 0.85rem;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 500ms;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:active {
+    padding: 0.85rem 1.5rem 0.65rem;
+  }
+
+  &:disabled {
+    filter: grayscale(70%);
+    cursor: not-allowed;
+
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 0.4rem;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &--blue {
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 136, 225);
+    border-color: rgb(38, 136, 225);
+
+
+  &:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(23, 106, 181);
+      border-color: rgb(13, 82, 146);
+    }
+
+    &:active {
+      box-shadow: inset 0 0.3rem 0.5rem rgba(0,0,0,.45);
+    }
+  }
+}

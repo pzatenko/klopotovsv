@@ -2,21 +2,27 @@ $header-color: #379ad9;
 
 .header {
   display: flex;
-  // position: fixed;
   width: 100%;
-  z-index: 2;
-  // box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.3);
-  // background: #ffffff;
+  z-index: 3;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0,0,0,0.2);
   flex-direction: column;
   align-items: center;
   background: url("../imgs/bg_top.svg") top / auto 100% no-repeat;
 
+  &--pages {
+    background-size: cover;
+  }
+
+  &__nav {
+
+  }
+
   &__wrapper {
-    height: 10.5rem;
     width: 148rem;
     display: flex;
-    margin: 2.5rem auto 0;
+    margin: 2.5rem auto;
     position: relative;
+
   }
 
   &__logo {
@@ -25,25 +31,7 @@ $header-color: #379ad9;
     &__img {
       height: 10.5rem;
       transition: all 600ms;
-
-      &--small {
-        height: 5.5rem;
-        background: rgb(55, 154, 217);
-      }
     }
-
-/*    &__wrapper {
-      height: 10.5rem;
-      width: 10.5rem;
-      margin-right: 2rem;
-      box-shadow: 0.1rem 0.5rem 0.5rem rgba(0,0,0,0.19);
-      border-radius: 50%;
-      transition: all 600ms;
-      background: rgb(255, 255, 255);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }*/
 
     &__title {
       display: flex;
@@ -54,12 +42,115 @@ $header-color: #379ad9;
       transition: all 600ms;
 
       &--show {
-        width: 32rem;
+        width: 25rem;
+        margin-left: 4rem;
       }
     }
 
-    &__nav {
+    &__text {
+      font: 700 2.7rem/1.2 'Montserrat', sans-serif;
+      color: #fff;
+      margin: 0;
+      white-space: nowrap;
+    }
 
+    &__subtext {
+      font: 700 1.9rem/1.1 'Montserrat', sans-serif;
+      color: #fff;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+  }
+
+  &__logo-link {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+
+    &__link {
+      text-decoration: none;
+      font: 700 2.1rem/1 Montserrat,sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0.3rem 0;
+      transition: all 200ms;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &__svg {
+        height: 2.8rem;
+        width: 2.8rem;
+        margin-right: 1rem;
+
+      }
+    }
+  }
+}
+
+.header-scroll {
+  display: flex;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0,0,0,0.2);
+  flex-direction: column;
+  align-items: center;
+  background: url("../imgs/bg_top.svg") top / auto 100% no-repeat;
+
+  &__wrapper {
+    position: fixed;
+    margin: 0;
+    width: auto;
+    height: 8.5rem;
+    top: -8.5rem;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: all 200ms;
+    opacity: 0;
+    display: flex;
+
+    &--show {
+      box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+      animation: nav-main-scroll-down 600ms normal forwards ease-in-out;
+    }
+
+    &--hide {
+      animation: nav-main-scroll-up 600ms normal forwards ease-in-out;
+      box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    margin-left: 1rem;
+
+    &__img {
+      height: 8.5rem;
+      transition: all 600ms;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 0;
+      overflow: hidden;
+      transition: all 600ms;
+      margin-left: 1.5rem;
+
+      &--show {
+        width: 25rem;
+      }
     }
 
     &__text {
@@ -86,10 +177,11 @@ $header-color: #379ad9;
 
     &__link {
       text-decoration: none;
-      font: 700 2.1rem/1 Montserrat,sans-serif;
-      color: #fff;
+      font: 700 1.8rem/1 Montserrat,sans-serif;
+      color: #379ad9;
       display: flex;
       padding: 0.3rem 0;
+      margin-right: 3rem;
       transition: all 200ms;
 
       &:hover {
@@ -97,10 +189,33 @@ $header-color: #379ad9;
       }
 
       &__svg {
-        height: 2.2rem;
-        margin-right: 1rem;
+        height: 2rem;
+        width: 2.5rem;
+        margin-right: 0.8rem;
 
       }
     }
+  }
+}
+
+@keyframes nav-main-scroll-down {
+  0%   {
+    top: -8.5rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-main-scroll-up {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100%   {
+    top: -8.5rem;
+    opacity: 0;
   }
 }
