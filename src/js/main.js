@@ -1,6 +1,6 @@
 /*import shuffle from "lodash/shuffle";
 import axios from "axios";*/
-import $ from "jquery/dist/jquery.slim";
+import $ from "jquery";
 
 window.addEventListener("load", () => {
     const menuLiClass = ".menu__item, .menu-scroll__item";
@@ -13,6 +13,9 @@ window.addEventListener("load", () => {
     const headerWrapper = ".header-scroll__wrapper";
     const headerWrapperShow = "header-scroll__wrapper--show";
     const headerWrapperHide = "header-scroll__wrapper--hide";
+
+    const pageUp = ".pageup";
+    const pageUpShowClass = "pageup--show";
     
     menuLi.hover(function () {
         $(this).siblings().css("opacity", 0.5);
@@ -29,13 +32,30 @@ window.addEventListener("load", () => {
                 $(headerWrapper).removeClass(headerWrapperHide);
                 $(headerWrapper).addClass(headerWrapperShow);
                 $(logoTitleClass).addClass(logoTitleShowAddClass);
+                $(pageUp).addClass(pageUpShowClass);
             }
             else {
                 $(logoTitleClass).removeClass(logoTitleShowAddClass);
                 $(headerWrapper).removeClass(headerWrapperShow);
                 $(headerWrapper).addClass(headerWrapperHide);
+                $(pageUp).removeClass(pageUpShowClass);
+            }
+        });
+    }
+    else {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > $(logoTitleShowPointClass).offset().top) {
+                $(pageUp).addClass(pageUpShowClass);
+            }
+            else {
+                $(pageUp).removeClass(pageUpShowClass);
             }
         });
     }
 
+    $(pageUp).click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+    });
 });
