@@ -56,10 +56,6 @@ $multiplier-phone: 0.9;
   html {
     @include html-fz(($multiplier-phone * 2.019263701));
   }
-
-  body {
-    font-size: 2.3rem;
-  }
 }
 @media (max-width: 770px) {
   html {
@@ -116,9 +112,16 @@ $multiplier-phone: 0.9;
     @include html-fz(($multiplier-phone * 1.245666667));
   }
 }
+@media (max-width: 393px) {
+  html {
+    @include html-fz(($multiplier-phone * 1.228125));
+  }
+}
 @media (max-width: 375px) {
   html {
     @include html-fz(($multiplier-phone * 1.141666667));
+    /*@include html-fz(($multiplier-phone * 1.171875));*/
+
   }
 }
 @media (max-width: 360px) {

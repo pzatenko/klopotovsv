@@ -25,9 +25,7 @@
 /* Styles for Mobile */
 @media (max-width: 850px) {
   html {
-    font-size: 113.58358% !important; }
-  body {
-    font-size: 2.3rem; } }
+    font-size: 113.58358% !important; } }
 
 @media (max-width: 770px) {
   html {
@@ -73,9 +71,14 @@
   html {
     font-size: 70.06875% !important; } }
 
+@media (max-width: 393px) {
+  html {
+    font-size: 69.08203% !important; } }
+
 @media (max-width: 375px) {
   html {
-    font-size: 64.21875% !important; } }
+    font-size: 64.21875% !important;
+    /*@include html-fz(($multiplier-phone * 1.171875));*/ } }
 
 @media (max-width: 360px) {
   html {
