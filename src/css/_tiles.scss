@@ -52,6 +52,9 @@
             transition: all 400ms;
             height: inherit;
             padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             &:hover {
                 width: 41rem;
@@ -123,9 +126,10 @@
         flex-direction: column;
         padding: 0 1rem 0;
         margin-top: 0;
+        height: 100%;
 
         &__left {
-            margin-bottom: 3rem;
+            margin: 0.5rem 0 1.5rem;
         }
 
         &__right {
@@ -135,7 +139,7 @@
 
         &__rectangle {
             width: 100%;
-            height: auto;
+            height: 10rem;
 
             &:not(:last-child) {
                 margin-bottom: 1.5rem;

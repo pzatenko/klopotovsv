@@ -199,6 +199,7 @@
   .block-promo {
     width: 100%;
     margin-bottom: 0;
+    flex: auto;
 
     &__title {
       display: none;
@@ -206,7 +207,9 @@
 
     &__content {
       width: 100%;
-      margin-bottom: 0;
+      height: 100%;
+      margin: 0;
+
     }
   }
 
