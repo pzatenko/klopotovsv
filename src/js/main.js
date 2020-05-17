@@ -3,6 +3,11 @@ import axios from "axios";*/
 import $ from "jquery";
 
 window.addEventListener("load", () => {
+    const blockMap = ".block-map";
+    $(blockMap).on("DOMNodeInserted", function () {
+        $(this).find(".ymaps-2-1-76-controls-pane").remove();
+    });
+
     const menuLiClass = ".menu__item, .menu-scroll__item";
     const menuLi = $(menuLiClass);
 

@@ -67,6 +67,13 @@ body {
   }
 }
 
+#block_scroll_point {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
 @keyframes pageup-show {
   0% {
     opacity: 0;

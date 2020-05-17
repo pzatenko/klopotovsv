@@ -131,6 +131,8 @@
   box-shadow: 0 0 0 0.1rem #ddd;
   border-top: 0.1rem solid #ddd;
   position: relative;
+  height: 40rem;
+  background: #f3f3f3;
   
   &__address {
     position: absolute;
@@ -144,6 +146,7 @@
     border-radius: 2rem;
     z-index: 2;
     box-shadow: 0 0.1rem 1.2rem rgba(35, 134, 225, 0.68);
+    border: 1px solid #3894ce;
   }
 
   &__title {
@@ -242,6 +245,30 @@
     &__info {
       margin: 0;
       width: auto;
+    }
+  }
+
+  .block-map {
+    &__subtitle {
+      margin-top: 0;
+    }
+
+    &__address {
+      width: 94%;
+      height: auto;
+      right: auto;
+      left: 50%;
+      top: 1rem;
+      transform: translate(-50%, 0);
+      bottom: auto;
+      padding: 1.5rem;
+      display: flex;
+
+
+
+      &__bottom {
+        padding-left: 1.5rem;
+      }
     }
   }
 }
