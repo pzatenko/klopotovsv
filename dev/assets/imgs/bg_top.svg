@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 1920 750" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<linearGradient id="c" x1="1720.7" x2="668.77" y1="1280.2" y2="2782.5" gradientTransform="matrix(1.0469 0 0 .40896 178.9 1183)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7cd1f5" offset="0"/>
+<stop stop-color="#1c80df" offset="1"/>
+</linearGradient>
+<clipPath id="b">
+<path d="m3045.1 1442.2v965.66h-2472.1v-965.66z" opacity="0" stroke-width=".84248"/>
+</clipPath>
+<clipPath id="a">
+<path d="m2799.1 1706.5v750h-1920v-750z" opacity="0" stroke-width=".65433"/>
+</clipPath>
+</defs>
+<path transform="translate(-879.06 -1706.5)" d="m2799.1 1706.5v750h-1920v-750z" clip-path="url(#a)" fill="url(#c)" fill-rule="evenodd" stroke-width=".65433"/>
+<g transform="matrix(.77667 0 0 .77667 -445.06 -1120.1)" clip-path="url(#b)" fill="#258fe0" fill-opacity=".4" fill-rule="evenodd">
+<path d="m2311.6 662.44 1131.2 1131.2c104.26 104.26 104.26 272.8 0 377.06l-377.08 377.06c-104.26 104.26-272.82 104.26-377.08 0l-1131.2-1131.2c-104.26-104.26-104.26-272.8 0-377.06l377.08-377.06c104.26-104.26 272.82-104.26 377.08 0z"/>
+<path d="m961.24 90.286 1306.4 1306.4c120.41 120.41 120.41 315.07 0 435.48l-435.48 435.48c-120.41 120.41-315.07 120.41-435.48 0l-1306.4-1306.4c-120.41-120.41-120.41-315.07 0-435.48l435.48-435.48c120.41-120.41 315.07-120.41 435.48 0z"/>
+</g>
+</svg>
