@@ -81,11 +81,10 @@
 
   &__img {
     width: 35rem;
-    height: 35rem;
     display: flex;
     position: absolute;
     bottom: 0;
-    left: 1rem;
+    transform: translateX(-0.25rem);
   }
 }
 /*.block-services {
@@ -242,7 +241,6 @@
 
     &__img {
       width: 19rem;
-      height: 19rem;
     }
 
     &__info {
