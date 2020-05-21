@@ -35,7 +35,11 @@ const compileProdCss = () => {
     return src(paths.styles.src)
         .pipe(sass())
         .pipe(ap({
-            overrideBrowserslist: "last 5 version",
+            overrideBrowserslist: [
+                "last 8 version",
+                "> 1%",
+                "IE 10"
+            ],
             grid: "autoplace",
         }))
         .pipe(cleanCss())
@@ -45,6 +49,14 @@ const compileProdCss = () => {
 const compileDevCss = () => {
     return src(paths.styles.src)
         .pipe(sass())
+        .pipe(ap({
+            overrideBrowserslist: [
+                "last 8 version",
+                "> 1%",
+                "IE 10"
+            ],
+            grid: "autoplace",
+        }))
         .pipe(dest(paths.styles.destDev))
 }
 
